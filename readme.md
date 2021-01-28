@@ -2,6 +2,6 @@
 
     使用技术
     
-    typescript + 原生小程序
+    typescript + less + 原生小程序
 
     
