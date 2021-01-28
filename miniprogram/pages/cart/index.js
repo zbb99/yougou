@@ -1,4 +1,4 @@
-// pages/cart/index.js
+// pages/cart/index.ts
 Page({
 
   /**

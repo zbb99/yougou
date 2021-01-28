@@ -1,4 +1,4 @@
-// pages/collect/index.js
+// pages/collect/index.ts
 Page({
 
   /**

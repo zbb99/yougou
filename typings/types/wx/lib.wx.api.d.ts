@@ -8820,7 +8820,7 @@ worker.postMessage({
 *
 * 主线程中
 * ```js
-const worker = wx.createWorker('workers/request/index.js')
+const worker = wx.createWorker('workers/request/index.ts')
 
 worker.postMessage({
   msg: 'hello from main'

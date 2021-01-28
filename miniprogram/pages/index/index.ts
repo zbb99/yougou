@@ -13,31 +13,28 @@ Page({
         this.getCateList();
         this.getFloorList();
     },
-    getSwiperList() {
-        request({
-            url: "https://api-hmugo-web.itheima.net/api/public/v1/home/swiperdata"
-        }).then((res: any) => {
-            this.setData({
-                swiperList: res.data.message
-            });
+    async getSwiperList() {
+        const res: any = await request({
+            url: "/home/swiperdata"
+        });
+        this.setData({
+            swiperList: res
         });
     },
-    getCateList() {
-        request({
-            url: "https://api-hmugo-web.itheima.net/api/public/v1/home/catitems"
-        }).then((res: any) => {
-            this.setData({
-                cateList: res.data.message
-            });
+    async getCateList() {
+        const res: any = await request({
+            url: "/home/catitems"
+        });
+        this.setData({
+            cateList: res
         });
     },
-    getFloorList() {
-        request({
-            url: "https://api-hmugo-web.itheima.net/api/public/v1/home/floordata"
-        }).then((res: any) => {
-            this.setData({
-                floorList: res.data.message
-            });
+    async getFloorList() {
+        const res: any = await request({
+            url: "/home/floordata"
+        });
+        this.setData({
+            floorList: res
         });
     }
 });

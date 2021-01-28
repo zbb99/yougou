@@ -1,4 +1,4 @@
-// pages/search/index.js
+// pages/search/index.ts
 Page({
 
   /**
